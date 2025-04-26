@@ -51,15 +51,13 @@ st.write(input_df)
 
 # ---- MODEL LOADING PART ----
 # Load the trained model and scaler
-# with open('model.pkl', 'rb') as model_file:
-#     model = pickle.load(model_file)
+with open('model.pkl', 'rb') as model_file:
+    model = pickle.load(model_file)
 
-# with open('scaler.pkl', 'rb') as scaler_file:
-#     scaler = pickle.load(scaler_file)
+with open('scaler.pkl', 'rb') as scaler_file:
+    scaler = pickle.load(scaler_file)
 
 
-model = joblib.load('churn_model.pkl')
-scaler = joblib.load('churn_scaler.pkl')
 
 
 # Preprocess the input data
